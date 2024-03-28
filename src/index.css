@@ -1,0 +1,117 @@
+:root {
+  --dark-blue: hsl(240, 38%, 20%);
+  --grayish-blue: hsl(240, 18%, 77%);
+  --font-size: 32px;
+  --font-family: "Inter";
+  --font-weight-300: 300;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--dark-blue);
+
+  background-image: url("./assets/background/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  min-height: 90vh;
+  margin: auto;  
+
+  background-image: url("./assets/background/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* LEFT */
+.testimonial-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+  position: relative;
+  left: 118px;
+
+  background-image: url("./assets/background/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: 100px 150px;
+}
+
+.testimonial-quote {
+  font-weight: var(--font-weight-300);
+  margin-bottom: 25px;
+}
+
+.person-name {
+  font-size: 1rem;
+  font-weight: var(--font-weight-700);
+  margin-right: 7px;
+}
+
+.person-job {
+  font-size: 1rem;
+  font-weight: var(--font-weight-300);
+  color: var(--grayish-blue);
+}
+
+/* RIGHT */
+.testimonial-avatar {
+  width: 50%;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-avatar img {
+  margin: auto;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* SLIDER */
+.slider-container {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: auto;
+  border-radius: 50px;
+  position: relative;
+  bottom: 75px;
+  left: 175px;
+}
+
+.slider-container button {
+  background: none;
+  border: none;
+  padding: 15px 20px;
+}
+
+.slider-container button:hover{
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
