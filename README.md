@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Source code](https://github.com/theGamingKitten/coding-bootcamp-testimonials-slider-master)
-- Live Site URL: [Preview](https://your-live-site-url.com)
+- Live Site URL: [Preview](https://coding-bootcamp-testimonials-slider-master-blond.vercel.app/)
 
 ## My process
 
@@ -47,7 +47,9 @@ Users should be able to:
 
 ### What I learned
 
-Positioning the slider right was the biggest problem for me. In the end I decided to just position it right at mobile (375px), tablet (768px) and desktop (1440px) size.
+Positioning the slider right was the biggest problem for me. In the end I decided to just position it right at the given mobile (375px) and desktop (1440px) sizes.
+
+Starting this challenge with a mobile-first workflow would have been a better way, as I was really struggeling with getting it to look decent.
 
 ### Continued development
 
