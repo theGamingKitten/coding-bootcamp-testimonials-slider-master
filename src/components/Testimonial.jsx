@@ -45,7 +45,7 @@ export default function Testimonial() {
               <p className="testimonial-quote">
                 “ {testimonials[currentIndex].quote} ”
               </p>
-              <p>
+              <p className='testimonial-details'>
               <span className="person-name">{testimonials[currentIndex].name}</span>
               <span className="person-job">{testimonials[currentIndex].job}</span>
               </p>
