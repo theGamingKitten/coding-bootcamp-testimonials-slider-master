@@ -39,38 +39,34 @@ export default function Testimonial() {
       };
 
     return (
-        <>
-          <div className="testimonial">
-            <div className="testimonial-text">
-              <p className="testimonial-quote">
-                “ {testimonials[currentIndex].quote} ”
-              </p>
-              <p className='testimonial-details'>
-              <span className="person-name">{testimonials[currentIndex].name}</span>
-              <span className="person-job">{testimonials[currentIndex].job}</span>
-              </p>
-            </div>
-            <div className="testimonial-avatar">
-              <img
-                src={testimonials[currentIndex].portraitSrc}
-                alt={testimonials[currentIndex].name}
-              />
-            </div>
-          </div> 
-          <div className="slider-container">
-              <button 
-                className="slider-arrow-left"
-                onClick={prevSlide}
-              >
-              <img src={arrow_left}/>
-              </button>
-              <button 
-                className="slider-arrow-right"
-                onClick={nextSlide}
-              >
-              <img src={arrow_right}/>
-              </button>
-            </div> 
-        </>
+        <div className="container">
+          <div className="quote">
+            “ {testimonials[currentIndex].quote} ”
+            <div className="details">
+            <span className="name">{testimonials[currentIndex].name}</span>
+            <span className="job">{testimonials[currentIndex].job}</span>
+          </div>
+        </div>
+        <div className="portrait-container">
+      <img 
+        className="portrait" 
+        src={testimonials[currentIndex].portraitSrc} 
+        alt={testimonials[currentIndex].name}/>
+      <div className="slider-container">
+      <button 
+        className="slider-arrow-left"
+        onClick={prevSlide}
+      >
+      <img src={arrow_left}/>
+      </button>
+      <button 
+        className="slider-arrow-right"
+        onClick={nextSlide}
+      >
+      <img src={arrow_right}/>
+      </button>
+      </div>
+        </div>  
+        </div>        
     );
 }
